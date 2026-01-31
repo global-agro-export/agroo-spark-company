@@ -431,17 +431,10 @@ footer {
 .overlay p {
   font-size: 14px !important;
 }
-/* CENTER HERO CARDS ON MOBILE */
-.hero-container {
-  justify-content: center;
-  text-align: center; /* لضمان أن أي محتوى داخلي يتمركز */
-}
 
-.hero-image {
-  margin: 0 auto; /* يجبر كل صورة تبقى في الوسط */
-}
+.hero-container { flex-wrap: nowrap; }
+.hero-image { width: 33.33%; flex: 0 0 33.33%; }
 
 }
-
 
 
