@@ -1,0 +1,437 @@
+/* ====== style.css (Updated for Two Side-by-Side Rounded Hero Images) ====== */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7f6;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #1b5e20, #4caf50);
+  padding: 20px 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  padding: 6px;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+}
+
+/* Hero Section with Two Side-by-Side Images */
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1 1 500px;
+  max-width: 550px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.hero-img-rounded {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  border-radius: 40px;
+}
+
+.overlay h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.hero-btn:hover {
+  background: #388e3c;
+}
+
+/* Other sections remain unchanged */
+section {
+  padding: 80px 60px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 36px;
+  color: #1b5e20;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+.card {
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.rounded-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.card .content {
+  padding: 25px;
+}
+.card h3 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+.contact-section {
+  text-align: center;
+}
+.contact-section h2 {
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.social-icon:hover {
+  background: #388e3c;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+.whatsapp-float:hover {
+  background: #1ebe5b;
+}
+footer {
+  background: #1b5e20;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+/* ===== Professional Contact Form ===== */
+.contact-form-pro {
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form-pro input,
+.contact-form-pro textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.contact-form-pro textarea {
+  min-height: 140px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.contact-form-pro input:focus,
+.contact-form-pro textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+  background: #fff;
+}
+
+.contact-form-pro button {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form-pro button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+/* ===== Professional Contact Form ===== */
+.contact-form-pro {
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form-pro input,
+.contact-form-pro textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.contact-form-pro textarea {
+  min-height: 140px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.contact-form-pro input:focus,
+.contact-form-pro textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+  background: #fff;
+}
+
+.contact-form-pro button {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form-pro button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+/* ===== Professional Contact Form ===== */
+.contact-form-pro {
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form-pro input,
+.contact-form-pro textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.contact-form-pro textarea {
+  min-height: 140px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.contact-form-pro input:focus,
+.contact-form-pro textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+  background: #fff;
+}
+
+.contact-form-pro button {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form-pro button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+.x-twitter {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+/* ===== FORCE HERO IMAGES SIDE BY SIDE (DESKTOP STYLE ON MOBILE) ===== */
+.hero-container {
+  flex-wrap: nowrap;
+}
+
+.hero-image {
+  width: auto;
+}
+/* FORCE HERO CARDS TO STAY SIDE BY SIDE ON MOBILE */
+.hero-container {
+  flex-wrap: nowrap;
+}
+
+.hero-image {
+  width: 33.33%;
+  flex: 0 0 33.33%;
+}
+/* ===== FORCE DESKTOP LAYOUT ON MOBILE ===== */
+.hero-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
+.hero-image {
+  flex: 0 0 33.333% !important;
+  width: 33.333% !important;
+  max-width: 33.333% !important;
+}
+
+/* ===== FORCE HERO IMAGES SIDE BY SIDE ===== */
+.hero-container {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.hero-image {
+  flex: 0 0 33.33% !important;
+  max-width: 33.33% !important;
+}
+
+.overlay h2 {
+  font-size: 24px !important;  /* خط أصغر مناسب للموبايل */
+}
+
+.overlay p {
+  font-size: 14px !important;
+}
+
+}
+
+

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+
+<!-- ===== SEO START ===== -->
+<title>Global Agro Export | Frozen Fruits, Vegetables & Medicinal Herbs</title>
+
+<meta name="description" content="Global Agro Export is an Egyptian company specializing in exporting frozen fruits, fresh vegetables, aromatic and medicinal plants to international markets with premium quality.">
+<meta name="keywords" content="Agro Export Egypt, Frozen Fruits Export, Medicinal Herbs Export, Aromatic Plants, Vegetables Export, Global Agro Export">
+<meta name="author" content="Global Agro Export">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Global Agro Export">
+<meta property="og:description" content="Premium exporter of frozen fruits, vegetables, aromatic and medicinal plants from Egypt.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agro-spark-company.github.io/global-agro-export/">
+<meta property="og:image" content="https://agro-spark-company.github.io/global-agro-export/images/hero1.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Global Agro Export">
+<meta name="twitter:description" content="Exporter of frozen fruits, vegetables and medicinal herbs from Egypt.">
+<meta name="twitter:image" content="https://agro-spark-company.github.io/global-agro-export/images/hero1.jpg">
+<!-- ===== SEO END ===== -->
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* Hero Container with two side-by-side images with advanced animation */
+    .hero-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+
+.title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline {
+  font-size: 25px;
+    color: #ffffff;
+  margin-top: 4px;
+  font-weight: 500;
+  opacity: 0.85; 
+}
+
+    .hero-image {
+      position: relative;
+      width: 45%;
+      min-width: 300px;
+      opacity: 0;
+      animation: heroReveal 1.8s ease forwards;
+    }
+
+    .hero-image:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .hero-img-rounded {
+      width: 100%;
+      border-radius: 40px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    .hero-image:hover .hero-img-rounded {
+      transform: scale(1.06) translateY(-8px);
+      box-shadow: 0 35px 70px rgba(0,0,0,0.25);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.55);
+      padding: 22px 34px;
+      border-radius: 22px;
+      text-align: center;
+      color: #fff;
+      backdrop-filter: blur(6px);
+      transition: transform 0.5s ease;
+    }
+
+    .hero-image:hover .overlay {
+      transform: translateX(-50%) translateY(-6px);
+    }
+
+    .hero-btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 11px 26px;
+      background: linear-gradient(135deg, #43a047, #66bb6a);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 14px;
+      font-weight: bold;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .hero-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    /* Floating Contact Icons Centered with brand colors */
+    .floating-contact {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 28px;
+      z-index: 9999;
+      opacity: 0;
+      animation: floatReveal 2s ease forwards 1s;
+    }
+
+    .floating-contact a {
+      padding: 18px;
+      border-radius: 50%;
+      font-size: 34px;
+      text-align: center;
+      color: #fff;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .floating-contact a:hover {
+      transform: scale(1.25) rotate(8deg);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+    }
+
+ /* Brand colors */
+    .floating-contact a:nth-child(1) { background: #25D366; } /* WhatsApp */
+    .floating-contact a:nth-child(2) { background: #1877F2; } /* Facebook */
+    .floating-contact a:nth-child(3) { background: #E4405F; } /* Instagram */
+    .floating-contact a:nth-child(4) { background: #2E7D32; } /* Phone */
+
+.floating-contact a.x-twitter {
+  background: #000000;
+}
+
+
+
+
+    /* Advanced Animations */
+    @keyframes heroReveal {
+      0% { opacity: 0; transform: translateY(60px) scale(0.92); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes floatReveal {
+      0% { opacity: 0; transform: translateX(-50%) translateY(40px); }
+      100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+/* ===== Professional Contact Form ===== */
+.contact-form-pro {
+  max-width: 700px;
+  margin-top: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.contact-form-pro input,
+.contact-form-pro textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.contact-form-pro textarea {
+  min-height: 140px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.contact-form-pro input:focus,
+.contact-form-pro textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+  background: #fff;
+}
+
+.contact-form-pro button {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 680;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form-pro button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+.x-twitter {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+
+}
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 10000;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 25px;
+  text-align: center;
+  max-width: 420px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  animation: popupScale 0.5s ease;
+}
+
+.popup-box h2 {
+  color: #2e7d32;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.popup-box p {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.popup-box button {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: #fff;
+  border: none;
+  padding: 12px 34px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-box button:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes popupScale {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.jpeg" alt="Company Logo">
+    <div class="title-group">
+      <h1>Global Agro Export</h1>
+      <p class="tagline">Igniting Susainable Agriofrituture</p>
+    </div>
+  </div>
+</header>
+
+
+<!-- Hero Section with Two Side-by-Side Images -->
+<section class="hero-container">
+  <div class="hero-image">
+    <img src="images/hero1.jpg" alt="Frozen fruits export from Egypt to international markets" class="hero-img-rounded">
+    <div class="overlay">
+      <h2>Frozen Fruits Export</h2>
+      <p>Premium quality frozen fruits carefully selected for European and global markets.</p>
+      <a href="#contact" class="hero-btn">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/hero2.jpg" alt="Medicinal and aromatic herbs export from Egypt" class="hero-img-rounded">
+    <div class="overlay">
+      <h2>Medicinal & Aromatic Herbs</h2>
+      <p>Carefully selected aromatic and medicinal herbs for international export.</p>
+      <a href="#contact" class="hero-btn">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/hero3.jpg" alt="Vegetables export from Egypt with premium quality" class="hero-img-rounded">
+    <div class="overlay">
+      <h2>Vegetables Export</h2>
+      <p>A selection of premium quality vegetables, carefully chosen by our experts.</p>
+      <a href="#contact" class="hero-btn">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="section-title">
+    <h2>Aromatic & Medicinal Plants</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <img src="images/herbs1.jpeg" alt="Aromatic Herbs" class="rounded-img">
+      <div class="content">
+        <h3>Aromatic Plants</h3>
+        <p>High-quality aromatic plants rich in natural essential oils, suitable for food, cosmetics and pharmaceutical industries.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/herbs2.jpeg" alt="Medicinal Plants" class="rounded-img">
+      <div class="content">
+        <h3>Medicinal Plants</h3>
+        <p>Carefully selected medicinal plants processed under strict quality control for international export.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/oils.jpeg" alt="Essential Oils" class="rounded-img">
+      <div class="content">
+        <h3>Essential Oils</h3>
+        <p>Pure and natural essential oils extracted using advanced techniques to preserve aroma and benefits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Contact Icons Centered -->
+<div class="floating-contact">
+  <a href="https://wa.me/201098885325" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/share/1JBmnrJvTj/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/spark_agro?igsh=aXBzOW9rNGdzbzhl&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="tel:+201098885325"><i class="fas fa-phone"></i></a>
+   <a href="https://x.com/agrospark?s=21" target="_blank" class="x-twitter">
+  <i class="fa-brands fa-x-twitter"></i>
+</a>
+
+
+</div>
+
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" style="padding:90px 20px; background:#f5f7f6;">
+  <div style="max-width:1100px; margin:auto; display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start;">
+
+    <!-- Contact Info & Form -->
+    <div style="background:#ffffff; padding:40px; border-radius:30px; box-shadow:0 20px 45px rgba(0,0,0,0.1); animation:heroReveal 1.2s ease forwards;">
+      <h2 style="color:#1b5e20; font-size:34px; margin-bottom:15px;">Contact Us</h2>
+      <p style="font-size:17px; margin-bottom:30px;">
+        Reach out to us for export inquiries, pricing, or partnership opportunities. Our team will respond promptly.
+      </p>
+<form
+  id="contactForm"
+  action="https://formsubmit.co/ajax/infoagro990@gmail.com"
+  method="POST"
+  class="contact-form-pro"
+>
+
+
+
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="infoagro990@gmail.com" required>
+  </div>
+
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+
+  <!-- Thank You Page -->
+  <input type="hidden" name="_next" value="https://agro-spark-company.github.io/global-agro-export/thank-you.html">
+
+  <!-- Anti Spam -->
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Export Inquiry - Global Agro Export">
+
+</form>
+
+
+
+      <div style="margin-top:30px; font-size:18px;">
+        <p>📞 Phone: <a href="tel:01098885325" style="color:#2e7d32; text-decoration:none;">01098885325</a></p>
+        <p>💬 WhatsApp: <a href="https://wa.me/201098885325" target="_blank" style="color:#25D366; text-decoration:none;">Chat on WhatsApp</a></p>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div style="border-radius:30px; overflow:hidden; box-shadow:0 20px 45px rgba(0,0,0,0.15); animation:heroReveal 1.6s ease forwards;">
+      <iframe
+        src="https://www.google.com/maps?q=Egypt&output=embed"
+        width="100%"
+        height="680"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Global Agro Export | All Rights Reserved</p>
+</footer>
+<!-- Thank You Popup -->
+<div id="thankYouPopup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Thank You! 🌱</h2>
+    <p>Your message has been sent successfully.<br>We will contact you shortly.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+<script>
+const form = document.getElementById("contactForm");
+const popup = document.getElementById("thankYouPopup");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  }).then(() => {
+    popup.classList.add("active");
+    form.reset();
+  });
+});
+
+function closePopup() {
+  popup.classList.remove("active");
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Global Agro Export",
+  "url": "https://agro-spark-company.github.io/global-agro-export/",
+  "logo": "https://agro-spark-company.github.io/global-agro-export/images/logo.jpeg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+20-109-888-5325",
+    "contactType": "customer service",
+    "areaServed": "Worldwide"
+  }
+}
+</script>
+
+</body>
+</html>
