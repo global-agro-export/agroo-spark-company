@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://global-agro-export.github.io/agroo-spark-company/sitemap.xml
